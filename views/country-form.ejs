@@ -1,0 +1,15 @@
+<%- include('partials/header') %>
+<%- include('partials/nav') %>
+
+<main class="container">
+  <h1>Country Search</h1>
+  <p><strong>Trip Code:</strong> <%= tripCode %></p>
+
+  <form action="/country" method="POST" class="form-box">
+    <label for="countryName">Enter a country name:</label>
+    <input type="text" id="countryName" name="countryName" required>
+    <button type="submit">Search Country</button>
+  </form>
+</main>
+
+<%- include('partials/footer') %>

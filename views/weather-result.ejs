@@ -1,0 +1,18 @@
+<%- include('partials/header') %>
+<%- include('partials/nav') %>
+
+<main class="container">
+  <h1>Weather Results</h1>
+  <p><strong>Trip Code:</strong> <%= tripCode %></p>
+
+  <section class="card result-card">
+    <h2><%= weather.name %></h2>
+    <img class="weather-img" src="<%= weatherImage %>" alt="Weather visual">
+    <p><strong>Temperature:</strong> <%= weather.main.temp %> °F</p>
+    <p><strong>Feels Like:</strong> <%= weather.main.feels_like %> °F</p>
+    <p><strong>Condition:</strong> <%= weather.weather[0].description %></p>
+    <p><strong>Humidity:</strong> <%= weather.main.humidity %>%</p>
+  </section>
+</main>
+
+<%- include('partials/footer') %>

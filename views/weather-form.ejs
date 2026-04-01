@@ -1,0 +1,15 @@
+<%- include('partials/header') %>
+<%- include('partials/nav') %>
+
+<main class="container">
+  <h1>Weather Search</h1>
+  <p><strong>Trip Code:</strong> <%= tripCode %></p>
+
+  <form action="/weather" method="POST" class="form-box">
+    <label for="city">Enter a city name:</label>
+    <input type="text" id="city" name="city" required>
+    <button type="submit">Check Weather</button>
+  </form>
+</main>
+
+<%- include('partials/footer') %>

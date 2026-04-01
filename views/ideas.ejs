@@ -1,0 +1,15 @@
+<%- include('partials/header') %>
+<%- include('partials/nav') %>
+
+<main class="container">
+  <h1>Travel Ideas</h1>
+  <p><strong>Trip Code:</strong> <%= tripCode %></p>
+
+  <ul class="idea-list">
+    <% ideas.forEach(function(idea) { %>
+      <li><%= idea %></li>
+    <% }) %>
+  </ul>
+</main>
+
+<%- include('partials/footer') %>
